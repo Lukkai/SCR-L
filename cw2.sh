@@ -18,3 +18,4 @@
 #wierszy z pliku. Najprościej to wykonać ustawiając dla polecenia pętli while skierowanie
 # wejścia stdin z pliku, dzięki czemu w kolejnych przebiegach pętli czytanie z pliku/stdin 
 # będzie kontynuowane. 
+
