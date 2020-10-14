@@ -18,4 +18,7 @@
 # użytkownikowi wykorzystaj polecenie echo, a do odczytania odpowiedzi użytkownika polecenia read
 # lub programu line.
 
-#Wskazówka: można usprawnić czytanie i analizę (parsing) wektora argumentów z parametrami opcjonalnymi za pomocą programu getopt. Jego użycie jest proste, a daje przenośność i odporność na błędy. Dobry jest przykład w dokumentacji man getopt (na niektórych wersjach Linuksa man nie ma tego przykładu, patrz man getopt na systemie Solaris). 
+#Wskazówka: można usprawnić czytanie i analizę (parsing) wektora argumentów z parametrami opcjonalnymi 
+# za pomocą programu getopt. Jego użycie jest proste, a daje przenośność i odporność na błędy. 
+# Dobry jest przykład w dokumentacji man getopt (na niektórych wersjach Linuksa man nie ma tego
+# przykładu, patrz man getopt na systemie Solaris). 
