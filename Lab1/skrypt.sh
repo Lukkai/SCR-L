@@ -1,4 +1,5 @@
 #!/bin/bash
+#przykladowy skrypt wykonujcy porownanie dwoch wartosci i zwracajacy prawde/falsz
 
 a=10
 b=20
