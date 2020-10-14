@@ -11,4 +11,4 @@
 #co ułatwia sprawdzanie wartśoci daty, i uniezależnia działanie skryptu od lokalizacji 
 #(będzie on poprawnie sprawdzał warunek również np. w Japonii). 
 
-[ "$(date + %u)" -gt 5 ] && echo "wee-kend ^^" || echo "nie weekend QQ"
+[ "$(date +%u)" -gt 5 ] && echo "wee-kend ^^" || echo "nie weekend QQ"
