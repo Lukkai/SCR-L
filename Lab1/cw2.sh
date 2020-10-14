@@ -19,3 +19,16 @@
 # wejścia stdin z pliku, dzięki czemu w kolejnych przebiegach pętli czytanie z pliku/stdin 
 # będzie kontynuowane. 
 
+
+sudo apt update && sudo apt get upgrade -y && sudo apt install -y mutt
+
+path=$(pwd)/Cw2_files
+
+for mail in $(cat $path/adresy.txt)
+do
+    cat $path/tresc.txt | mutt -s "Instalacja okien PCV" $mail -a $path/spec*.pdf
+done
+
+#-s = send
+#-a = append
+#cat wczytuje tresc wiadomosci przekazuje to do maila i wysyla go z zalacznikiem
