@@ -12,3 +12,8 @@
 #(będzie on poprawnie sprawdzał warunek również np. w Japonii). 
 
 [ "$(date +%u)" -gt 5 ] && echo "wee-kend ^^" || echo "nie weekend QQ"
+
+#[ expression ] zwraca nam wynik boolean
+#date +%u zwraca dzien tygodnia, 
+#argument gt okresla czy to wiecej niz 5
+# jesli calosc false to wykonuje sie echo po prawej stronie operatora ||

@@ -2,5 +2,5 @@
 Łukasz Chwistek
 243662
 
-Repository created for SCR course purposes.
+Repository created for SCR - operating systems course purposes.
 
