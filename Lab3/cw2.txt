@@ -36,4 +36,4 @@ lukart@lukart-VirtualBox:~$ ps f
   33317 pts/5    S      0:00 bash
 
 
- Z procesów zostały procesy wyżej w chierarchii od procesu zabitego, a procesy nizej zostały przejete przez init i tez zabite.
+ Procesy bedace wyżej w hierarchii od procesu zabitego pozostały nienaruszone, a procesy bedace nizej zostały przejete przez init.
