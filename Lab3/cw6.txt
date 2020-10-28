@@ -32,7 +32,7 @@ Mozna też użyć kill na programie sleep:
 
 [1]+  Stopped                 sleep 30
 
-Wznawiamy go
+Wznawiamy proces sleep:
     lukart@lukart-VirtualBox:~$ kill -18 3968
     lukart@lukart-VirtualBox:~$ 
     [1]+  Done                    sleep 30
