@@ -1,0 +1,28 @@
+Wykonano skrypty w pythonie, przy wyskorzystaniu biblioteki signal.
+
+Zad2.a:
+PID: 48244
+
+do poprawy mam getSig, bo nie wypisuje sygnalow
+
+Powinien za kazdym sygnalem zgodnie z poleceniem dawac komunikat i wychodzic z programu
+Zad2.b:
+PID: 49047
+
+do poprawy priint otrzymanych procesow
+
+Kazdy sygnal jest ignorowany i wraca do dalszej pracy
+
+Zad2.c:
+PID: 48080
+
+do poprawy print otrzymanych procesow
+
+Gdy otrzymuje sygnal robi 1000 loopow
+
+Zad2.d:
+PID: 48038
+
+do poprawy print otrzymanych procesow
+
+Ignoruje wszystkie sygnaly.
