@@ -13,7 +13,7 @@ def getSigUsr2(sigNum, frame):
     print(f'Catched: {sigNum}. terminating the process')
     sys.exit()
 
-def getProcess(sigNum, frame):
+def killProcess(sigNum, frame):
     print(f'Catched: {sigNum}, terminating the process')
     sys.exit()
 
