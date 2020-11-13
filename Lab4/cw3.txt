@@ -1,0 +1,438 @@
+/proc jest montowanym folderem na linuxie ktorg zawiera informacje o procesach
+
+lukart@lukart-VirtualBox:/proc$ ls -la
+total 4
+dr-xr-xr-x 254 root            root                          0 lis 13 18:47 .
+drwxr-xr-x  20 root            root                       4096 paź 14 18:10 ..
+dr-xr-xr-x   9 root            root                          0 lis 13 18:47 1
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 10
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1001
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1009
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 101
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1015
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 1019
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 102
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1036
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 104
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 105
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 106
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 107
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 108
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 109
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 11
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 111
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1111
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1139
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 114
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1144
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1148
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1155
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 00:49 1171
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1191
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1195
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1196
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1198
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 12
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1202
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1212
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1216
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1221
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1229
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 123
+dr-xr-xr-x   9 geoclue         geoclue                       0 lis 14 01:04 1238
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1240
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1243
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1258
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 126
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1280
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 13
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1303
+dr-xr-xr-x   9 lukart          lukart                        0 lis 13 18:47 1334
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1350
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1351
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1352
+dr-xr-xr-x   9 lukart          lukart                        0 lis 13 18:47 1353
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1354
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1361
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1363
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1364
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1365
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1368
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1370
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1375
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1383
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1384
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1389
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 139
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1392
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1394
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 14
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 140
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1417
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1428
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1433
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1453
+dr-xr-xr-x   9 colord          colord                        0 lis 14 01:04 1472
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1495
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 15
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 1506
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 16
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 17
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 1751
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 1784
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 18
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 188
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 189
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 1935
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 198
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 2
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 20
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 201
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 21
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 21545
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 21546
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 21550
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 21551
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 21552
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 21553
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 21554
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 21555
+dr-xr-xr-x   9 root            root                          0 lis 14 00:51 2194
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 22
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 220
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 221
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 222
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 23
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 24
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 25381
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 26
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 261
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 27
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 2724
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 28
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 2843
+dr-xr-xr-x   9 root            root                          0 lis 14 00:49 285
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 289
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 29
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 290
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 292
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 3
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 30
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 301
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 302
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 3088
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 311
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 313
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 315
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 32
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 33
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 34
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 341
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 345
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 348
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 349
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 35
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 35603
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 35659
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 35660
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 357
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 359
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 36
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 36620
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 36879
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 37192
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 37235
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 37635
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 38794
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 38902
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 00:52 38961
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 39
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 39260
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 39309
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 39373
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 39452
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 39498
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 39595
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 39622
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 4
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 40
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 41
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 42
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 42956
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 42987
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 43
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 44
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 00:49 44822
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 44832
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 45035
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 4513
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 45664
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 00:49 46025
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 00:49 46043
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 46724
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 47543
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 48080
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 48121
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 48244
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 48530
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 48546
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 48547
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 48551
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 49047
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 49120
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 49511
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 00:54 49836
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 49844
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 49879
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 49923
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 49924
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 50206
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 50288
+dr-xr-xr-x   9 systemd-resolve systemd-resolve               0 lis 14 00:49 579
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 6
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 622
+dr-xr-xr-x   9 avahi           avahi                         0 lis 14 01:04 625
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 629
+dr-xr-xr-x   9 messagebus      messagebus                    0 lis 14 01:04 631
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 632
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 655
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 656
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 657
+dr-xr-xr-x   9 syslog          syslog                        0 lis 14 01:04 667
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 669
+dr-xr-xr-x   9 root            root                          0 lis 14 00:49 670
+dr-xr-xr-x   9 root            root                          0 lis 13 18:47 672
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 673
+dr-xr-xr-x   9 avahi           avahi                         0 lis 14 01:04 686
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 00:54 7187
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 7189
+dr-xr-xr-x   9 root            root                          0 lis 14 00:52 719
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 7190
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 7225
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 7228
+dr-xr-xr-x   9 lukart          lukart                        0 lis 13 19:02 7247
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 7286
+dr-xr-xr-x   9 lukart          lukart                        0 lis 13 19:03 7326
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 734
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 757
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 764
+dr-xr-xr-x   9 root            lukart                        0 lis 14 01:04 767
+dr-xr-xr-x   9 whoopsie        whoopsie                      0 lis 14 01:04 812
+dr-xr-xr-x   9 kernoops        adm                           0 lis 14 01:04 821
+dr-xr-xr-x   9 kernoops        adm                           0 lis 14 01:04 828
+dr-xr-xr-x   9 lukart          lukart                        0 lis 13 18:47 874
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 875
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 884
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 886
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 889
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 893
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 896
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 9
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 90
+dr-xr-xr-x   9 rtkit           rtkit                         0 lis 14 01:04 901
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 905
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 91
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 911
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 919
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 92
+dr-xr-xr-x   9 lukart          lukart                        0 lis 13 18:47 929
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 93
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 94
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 947
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 95
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 951
+dr-xr-xr-x   9 lukart          lukart                        0 lis 14 01:04 956
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 96
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 97
+dr-xr-xr-x   9 root            root                          0 lis 14 01:04 98
+dr-xr-xr-x   2 root            root                          0 lis 13 18:47 acpi
+dr-xr-xr-x   5 root            root                          0 lis 13 18:47 asound
+-r--r--r--   1 root            root                          0 lis 14 01:04 buddyinfo
+dr-xr-xr-x   4 root            root                          0 lis 13 18:47 bus
+-r--r--r--   1 root            root                          0 lis 14 01:04 cgroups
+-r--r--r--   1 root            root                          0 lis 14 00:52 cmdline
+-r--r--r--   1 root            root                          0 lis 14 01:04 consoles
+-r--r--r--   1 root            root                          0 lis 14 00:52 cpuinfo
+-r--r--r--   1 root            root                          0 lis 14 01:04 crypto
+-r--r--r--   1 root            root                          0 lis 14 01:04 devices
+-r--r--r--   1 root            root                          0 lis 14 01:04 diskstats
+-r--r--r--   1 root            root                          0 lis 14 01:04 dma
+dr-xr-xr-x   2 root            root                          0 lis 14 01:04 driver
+-r--r--r--   1 root            root                          0 lis 14 01:04 execdomains
+-r--r--r--   1 root            root                          0 lis 14 01:04 fb
+-r--r--r--   1 root            root                          0 lis 14 01:04 filesystems
+dr-xr-xr-x   7 root            root                          0 lis 13 18:47 fs
+-r--r--r--   1 root            root                          0 lis 14 00:49 interrupts
+-r--r--r--   1 root            root                          0 lis 14 01:04 iomem
+-r--r--r--   1 root            root                          0 lis 14 01:04 ioports
+dr-xr-xr-x  23 root            root                          0 lis 13 18:47 irq
+-r--r--r--   1 root            root                          0 lis 13 18:47 kallsyms
+-r--------   1 root            root            140737477885952 lis 13 18:47 kcore
+-r--r--r--   1 root            root                          0 lis 14 01:04 keys
+-r--r--r--   1 root            root                          0 lis 14 01:04 key-users
+-r--------   1 root            root                          0 lis 13 18:47 kmsg
+-r--------   1 root            root                          0 lis 14 01:04 kpagecgroup
+-r--------   1 root            root                          0 lis 14 01:04 kpagecount
+-r--------   1 root            root                          0 lis 14 01:04 kpageflags
+-r--r--r--   1 root            root                          0 lis 14 01:04 loadavg
+-r--r--r--   1 root            root                          0 lis 14 01:04 locks
+-r--r--r--   1 root            root                          0 lis 14 01:04 mdstat
+-r--r--r--   1 root            root                          0 lis 14 01:04 meminfo
+-r--r--r--   1 root            root                          0 lis 14 01:04 misc
+-r--r--r--   1 root            root                          0 lis 14 00:52 modules
+lrwxrwxrwx   1 root            root                         11 lis 14 00:52 mounts -> self/mounts
+-rw-r--r--   1 root            root                          0 lis 13 18:47 mtrr
+lrwxrwxrwx   1 root            root                          8 lis 14 01:04 net -> self/net
+-r--------   1 root            root                          0 lis 14 01:04 pagetypeinfo
+-r--r--r--   1 root            root                          0 lis 14 01:04 partitions
+dr-xr-xr-x   2 root            root                          0 lis 14 01:04 pressure
+-r--r--r--   1 root            root                          0 lis 14 01:04 sched_debug
+-r--r--r--   1 root            root                          0 lis 14 01:04 schedstat
+dr-xr-xr-x   3 root            root                          0 lis 13 18:47 scsi
+lrwxrwxrwx   1 root            root                          0 lis 13 18:47 self -> 50288
+-r--------   1 root            root                          0 lis 14 01:04 slabinfo
+-r--r--r--   1 root            root                          0 lis 14 01:04 softirqs
+-r--r--r--   1 root            root                          0 lis 14 00:49 stat
+-r--r--r--   1 root            root                          0 lis 13 18:47 swaps
+dr-xr-xr-x   1 root            root                          0 lis 13 18:47 sys
+--w-------   1 root            root                          0 lis 13 18:47 sysrq-trigger
+dr-xr-xr-x   2 root            root                          0 lis 14 01:04 sysvipc
+lrwxrwxrwx   1 root            root                          0 lis 13 18:47 thread-self -> 50288/task/50288
+-r--------   1 root            root                          0 lis 14 01:04 timer_list
+dr-xr-xr-x   4 root            root                          0 lis 14 01:04 tty
+-r--r--r--   1 root            root                          0 lis 14 01:04 uptime
+-r--r--r--   1 root            root                          0 lis 14 00:52 version
+-r--r--r--   1 root            root                          0 lis 14 00:52 version_signature
+-r--------   1 root            root                          0 lis 14 01:04 vmallocinfo
+-r--r--r--   1 root            root                          0 lis 14 01:04 vmstat
+-r--r--r--   1 root            root                          0 lis 14 01:04 zoneinfo
+
+
+
+Foldery reprezentuja wybrane procesy, ktore miedzy innymi mozemy wyswietlic uzywajac top, ops albo htop.
+/proc jest specjalnym plikiem systemowym nazywajacym sie po "/proc"
+
+Kazdy folder to jakis PID
+i mozemy wyswietlac ich zawartosc:
+
+ls: cannot read symbolic link 'cwd': Permission denied
+ls: cannot read symbolic link 'root': Permission denied
+ls: cannot read symbolic link 'exe': Permission denied
+total 0
+dr-xr-xr-x   9 root root 0 lis 13 18:47 .
+dr-xr-xr-x 254 root root 0 lis 13 18:47 ..
+-r--r--r--   1 root root 0 lis 14 01:09 arch_status
+dr-xr-xr-x   2 root root 0 lis 14 00:49 attr
+-rw-r--r--   1 root root 0 lis 14 01:09 autogroup
+-r--------   1 root root 0 lis 14 01:09 auxv
+-r--r--r--   1 root root 0 lis 14 00:49 cgroup
+--w-------   1 root root 0 lis 14 01:09 clear_refs
+-r--r--r--   1 root root 0 lis 14 00:49 cmdline
+-rw-r--r--   1 root root 0 lis 14 00:49 comm
+-rw-r--r--   1 root root 0 lis 14 01:09 coredump_filter
+-r--r--r--   1 root root 0 lis 14 01:09 cpuset
+lrwxrwxrwx   1 root root 0 lis 14 01:09 cwd
+-r--------   1 root root 0 lis 14 01:09 environ
+lrwxrwxrwx   1 root root 0 lis 14 00:49 exe
+dr-x------   2 root root 0 lis 14 01:09 fd
+dr-x------   2 root root 0 lis 14 01:09 fdinfo
+-rw-r--r--   1 root root 0 lis 14 01:09 gid_map
+-r--------   1 root root 0 lis 14 01:09 io
+-r--r--r--   1 root root 0 lis 14 01:09 limits
+-rw-r--r--   1 root root 0 lis 14 00:49 loginuid
+dr-x------   2 root root 0 lis 14 01:09 map_files
+-r--r--r--   1 root root 0 lis 14 01:09 maps
+-rw-------   1 root root 0 lis 14 01:09 mem
+-r--r--r--   1 root root 0 lis 13 18:47 mountinfo
+-r--r--r--   1 root root 0 lis 14 01:09 mounts
+-r--------   1 root root 0 lis 14 01:09 mountstats
+dr-xr-xr-x   5 root root 0 lis 14 01:09 net
+dr-x--x--x   2 root root 0 lis 14 00:52 ns
+-r--r--r--   1 root root 0 lis 14 01:09 numa_maps
+-rw-r--r--   1 root root 0 lis 14 01:09 oom_adj
+-r--r--r--   1 root root 0 lis 14 01:09 oom_score
+-rw-r--r--   1 root root 0 lis 14 01:09 oom_score_adj
+-r--------   1 root root 0 lis 14 01:09 pagemap
+-r--------   1 root root 0 lis 14 01:09 patch_state
+-r--------   1 root root 0 lis 14 01:09 personality
+-rw-r--r--   1 root root 0 lis 14 01:09 projid_map
+lrwxrwxrwx   1 root root 0 lis 14 01:09 root
+-rw-r--r--   1 root root 0 lis 14 01:09 sched
+-r--r--r--   1 root root 0 lis 14 01:09 schedstat
+-r--r--r--   1 root root 0 lis 14 00:49 sessionid
+-rw-r--r--   1 root root 0 lis 14 01:09 setgroups
+-r--r--r--   1 root root 0 lis 14 01:09 smaps
+-r--r--r--   1 root root 0 lis 14 01:09 smaps_rollup
+-r--------   1 root root 0 lis 14 01:09 stack
+-r--r--r--   1 root root 0 lis 14 01:09 stat
+-r--r--r--   1 root root 0 lis 14 01:09 statm
+-r--r--r--   1 root root 0 lis 14 00:49 status
+-r--------   1 root root 0 lis 14 01:09 syscall
+dr-xr-xr-x   3 root root 0 lis 14 01:09 task
+-r--r--r--   1 root root 0 lis 14 01:09 timers
+-rw-rw-rw-   1 root root 0 lis 14 01:09 timerslack_ns
+-rw-r--r--   1 root root 0 lis 14 01:09 uid_map
+-r--r--r--   1 root root 0 lis 14 01:09 wchan
+
+
+przykladowo cat'ujac status dostajemy:
+
+
+lukart@lukart-VirtualBox:/proc/1$ cat status
+Name:	systemd
+Umask:	0000
+State:	S (sleeping)
+Tgid:	1
+Ngid:	0
+Pid:	1
+PPid:	0
+TracerPid:	0
+Uid:	0	0	0	0
+Gid:	0	0	0	0
+FDSize:	512
+Groups:	 
+NStgid:	1
+NSpid:	1
+NSpgid:	1
+NSsid:	1
+VmPeak:	  234892 kB
+VmSize:	  170148 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	   13528 kB
+VmRSS:	   13192 kB
+RssAnon:	    5224 kB
+RssFile:	    7968 kB
+RssShmem:	       0 kB
+VmData:	   20928 kB
+VmStk:	    1032 kB
+VmExe:	     940 kB
+VmLib:	    8740 kB
+VmPTE:	      96 kB
+VmSwap:	     672 kB
+HugetlbPages:	       0 kB
+CoreDumping:	0
+THP_enabled:	1
+Threads:	1
+SigQ:	0/15522
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	7be3c0fe28014a03
+SigIgn:	0000000000001000
+SigCgt:	00000001800004ec
+CapInh:	0000000000000000
+CapPrm:	0000003fffffffff
+CapEff:	0000003fffffffff
+CapBnd:	0000003fffffffff
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	0
+Speculation_Store_Bypass:	thread vulnerable
+Cpus_allowed:	f
+Cpus_allowed_list:	0-3
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	1403041
+nonvoluntary_ctxt_switches:	4064
+
+NAME
