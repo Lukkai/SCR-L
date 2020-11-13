@@ -16,7 +16,7 @@ def getSig(signum, frame):
 
 
 
-def sigDefine():
+def sigDefine(): #DO POPRAWWWYYYYYYYYYYY
     signal.signal(signal.SIGTERM, killProcess)
     signal.signal(signal.SIGALRM, getSig)
     signal.signal(signal.SIGUSR1, getSig)
@@ -34,4 +34,5 @@ if __name__ == '__main__':
 
     while True:
        i = i + 1
+       sigDefine()
        time.sleep(1)
