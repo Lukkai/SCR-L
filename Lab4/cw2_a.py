@@ -5,19 +5,19 @@ import signal
 import sys
 import os
 
-def receiveSigUsr1(sigNum, frame):
+def getSigUsr1(sigNum, frame):
     print(f'Catched: {sigNum}. terminating the process')
     sys.exit()
 
-def receiveSigUsr2(sigNum, frame):
+def getSigUsr2(sigNum, frame):
     print(f'Catched: {sigNum}. terminating the process')
     sys.exit()
 
-def terminateProcess(sigNum, frame):
+def getProcess(sigNum, frame):
     print(f'Catched: {sigNum}, terminating the process')
     sys.exit()
 
-def receiveSig(sigNum, frame):
+def getSig(sigNum, frame):
     print("Catched:", sigNum)
     sys.exit()
 
@@ -25,10 +25,10 @@ def receiveSig(sigNum, frame):
 
 if __name__ == '__main__':
     print("PID: "+ str(os.getpid()))
-    signal.signal(signal.SIGALRM, receiveSig)
-    signal.signal(signal.SIGTERM, terminateProcess)
-    signal.signal(signal.SIGUSR1, receiveSigUsr1)
-    signal.signal(signal.SIGUSR2, receiveSigUsr2)
+    signal.signal(signal.SIGALRM, getSig)
+    signal.signal(signal.SIGTERM, killProcess)
+    signal.signal(signal.SIGUSR1, getSigUsr1)
+    signal.signal(signal.SIGUSR2, getSigUsr2)
 
     i = 0
 
