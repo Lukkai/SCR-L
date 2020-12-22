@@ -1,0 +1,26 @@
+Za pomoca zmiennej przekazujemy pojedynczy argument,
+natomiast wiele argumentów przekazujemy za pomocą struct'a.
+
+Wykonanie kodu bug3.c, mimo że kompiluje się bez błędów, to zwraca nam:
+
+lukkai@lukkai-VirtualBox:~/Dokumenty/SCR-L/lab7/kod1$ gcc -o zad3_3 bug3.c -pthread
+lukkai@lukkai-VirtualBox:~/Dokumenty/SCR-L/lab7/kod1$ ./zad3_3
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Hello from thread 8
+Hello from thread 8
+Hello from thread 8
+Hello from thread 8
+Hello from thread 8
+Hello from thread 8
+Hello from thread 8
+Hello from thread 8
+
+Program bug3.c błędnie przekazuje dane, 
+a w programie zad3.c naprawiono te błędy i działa poprawnie.
