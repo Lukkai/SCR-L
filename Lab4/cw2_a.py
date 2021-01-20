@@ -7,20 +7,31 @@ import os
 
 
 def killProcess(signum, frame):
-    print(f'Caught: {signum}. process killed')
-    sys.exit()
-
-def getSig(signum, frame):
-    print("Caught:", signum)
+    print(f'Received: {signum}. process being terminated')
     sys.exit()
 
 
+def receiveSigUsr1(signum, frame):
+    print(f'Received:" {signum}. process being terminated')
+    sys.exit()
 
-def sigDefine(): #DO POPRAWWWYYYYYYYYYYY
+
+def receiveSigUsr2(signum, frame):
+    print(f'Received: {signum}. process being terminated')
+    sys.exit()
+
+
+def receiveSig(signum, frame):
+    print(f'Received: {signum}')
+    sys.exit()
+
+
+
+def sigDefine():
     signal.signal(signal.SIGTERM, killProcess)
-    signal.signal(signal.SIGALRM, getSig)
-    signal.signal(signal.SIGUSR1, getSig)
-    signal.signal(signal.SIGUSR2, getSig)
+    signal.signal(signal.SIGALRM, receiveSig)
+    signal.signal(signal.SIGUSR1, receiveSigUsr1)
+    signal.signal(signal.SIGUSR2, receiveSigUsr2)
 
 
 if __name__ == '__main__':
@@ -34,5 +45,4 @@ if __name__ == '__main__':
 
     while True:
        i = i + 1
-       sigDefine()
        time.sleep(1)

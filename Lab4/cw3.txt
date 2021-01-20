@@ -1,5 +1,18 @@
 /proc jest montowanym folderem na linuxie ktorg zawiera informacje o procesach
 
+man daje nam podstawowe informacje o proc:
+NAME
+       proc - process information pseudo-filesystem
+
+DESCRIPTION
+       The  proc  filesystem  is a pseudo-filesystem which provides an interface to kernel data structures.  It is commonly mounted at /proc.  Typically, it is mounted automatically by the system, but it
+       can also be mounted manually using a command such as:
+
+           mount -t proc proc /proc
+
+       Most of the files in the proc filesystem are read-only, but some files are writable, allowing kernel variables to be changed.
+       
+
 lukart@lukart-VirtualBox:/proc$ ls -la
 total 4
 dr-xr-xr-x 254 root            root                          0 lis 13 18:47 .
@@ -434,5 +447,3 @@ Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,000
 Mems_allowed_list:	0
 voluntary_ctxt_switches:	1403041
 nonvoluntary_ctxt_switches:	4064
-
-NAME

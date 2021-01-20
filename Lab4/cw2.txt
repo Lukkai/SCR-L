@@ -1,28 +1,71 @@
-Wykonano skrypty w pythonie, przy wyskorzystaniu biblioteki signal.
+Wykonano skrypty w pythonie przy wyskorzystaniu biblioteki signal.
 
-Zad2.a:
-PID: 48244
+a) Za kazdym sygnalem zgodnie z poleceniem daje komunikat i wychodzi z programu 
+W pierwszym terminalu wykonujemy Zad2.a:
+lukkai@lukkai-VirtualBox:~/Dokumenty/SCR-L/Lab4$ python3 cw2_a.py
+ID: 29804
+Received: 15. process being terminated
+lukkai@lukkai-VirtualBox:~/Dokumenty/SCR-L/Lab4$ python3 cw2_a.py
+PID: 29866
+Received: 14
+lukkai@lukkai-VirtualBox:~/Dokumenty/SCR-L/Lab4$ python3 cw2_a.py
+PID: 29869
+Received:" 10. process being terminated
+lukkai@lukkai-VirtualBox:~/Dokumenty/SCR-L/Lab4$ python3 cw2_a.py
+PID: 29873
+Received: 12. process being terminated
 
-do poprawy mam getSig, bo nie wypisuje sygnalow
+W drugim terminalu wysyłamy sygnał:
+lukkai@lukkai-VirtualBox:~$ kill -SIGTERM 29804
+lukkai@lukkai-VirtualBox:~$ kill -SIGALRM 29866
+lukkai@lukkai-VirtualBox:~$ kill -SIGUSR1 29869
+lukkai@lukkai-VirtualBox:~$ kill -SIGUSR2 29873
 
-Powinien za kazdym sygnalem zgodnie z poleceniem dawac komunikat i wychodzic z programu
-Zad2.b:
-PID: 49047
 
-do poprawy priint otrzymanych procesow
+b)Kazdy sygnal jest ignorowany i wraca do dalszej pracy
+W pierwszym terminalu wykonujemy Zad2.b:
+lukkai@lukkai-VirtualBox:~/Dokumenty/SCR-L/Lab4$ python3 cw2_b.py
+PID: 29919
+Received: 15
+Received: 14
+Received: 10
+Received: 12
 
-Kazdy sygnal jest ignorowany i wraca do dalszej pracy
+W drugim terminalu wysyłamy sygnał:
+lukkai@lukkai-VirtualBox:~$ kill -SIGUSR2 29873
+lukkai@lukkai-VirtualBox:~$ kill -SIGTERM 29919
+lukkai@lukkai-VirtualBox:~$ kill -SIGALRM 29919
+lukkai@lukkai-VirtualBox:~$ kill -SIGUSR1 29919
+lukkai@lukkai-VirtualBox:~$ kill -SIGUSR2 29919
 
-Zad2.c:
-PID: 48080
 
-do poprawy print otrzymanych procesow
+c)Gdy otrzymuje sygnal robi 1000 pętli
+W pierwszym terminalu wykonujemy Zad2.c:
+lukkai@lukkai-VirtualBox:~/Dokumenty/SCR-L/Lab4$ python3 cw2_c.py
+PID: 30174
+Received: 15
+Received: 14
+Received: 14
+Received: 14
+Received: 14
+Received:" 10
+Received: 12
 
-Gdy otrzymuje sygnal robi 1000 loopow
+W drugim terminalu wysyłamy sygnał:
+lukkai@lukkai-VirtualBox:~$ kill -SIGTERM 30174
+lukkai@lukkai-VirtualBox:~$ kill -SIGALRM 30174
+lukkai@lukkai-VirtualBox:~$ kill -SIGALRM 30174
+lukkai@lukkai-VirtualBox:~$ kill -SIGALRM 30174
+lukkai@lukkai-VirtualBox:~$ kill -SIGALRM 30174
+lukkai@lukkai-VirtualBox:~$ kill -SIGUSR1 30174
+lukkai@lukkai-VirtualBox:~$ kill -SIGUSR2 30174
 
-Zad2.d:
-PID: 48038
 
-do poprawy print otrzymanych procesow
+d)Ignoruje wszystkie sygnaly. 
+W pierwszym terminalu wykonujemy Zad2.d:
+lukkai@lukkai-VirtualBox:~/Dokumenty/SCR-L/Lab4$ python3 cw2_d.py
+PID: 30310
 
-Ignoruje wszystkie sygnaly.
+W drugim terminalu wysyłamy sygnał:
+lukkai@lukkai-VirtualBox:~$ kill -SIGTERM 30310
+lukkai@lukkai-VirtualBox:~$ kill -SIGTERM 30310

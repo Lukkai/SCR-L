@@ -5,24 +5,21 @@ import signal
 import sys
 import os
 
+
 def killProcess(signum, frame):
-    print(f'Received: {signum}')
-    return
+    pass
 
 
 def receiveSigUsr1(signum, frame):
-    print(f'Received: {signum}')
-    return
+    pass
 
 
 def receiveSigUsr2(signum, frame):
-    print(f'Received: {signum}')
-    return
-
+    pass
 
 def receiveSig(signum, frame):
-    print(f'Received: {signum}')
-    return
+    pass
+
 
 def sigDefine():
     signal.signal(signal.SIGTERM, killProcess)
@@ -36,10 +33,9 @@ if __name__ == '__main__':
     print("PID: "+ str(pid))
     
     sigDefine()
-
+    
     i = 0
 
     while True:
-        i = i + 1
-        time.sleep(1)
-
+       i = i + 1
+       time.sleep(1)
