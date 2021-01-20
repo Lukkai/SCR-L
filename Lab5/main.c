@@ -10,7 +10,7 @@
 #include <string.h>
 #include <unistd.h>
 
-#define BUFFER_SIZE 32
+#define BUFFER_SIZE 64
 
 int main(int argc, char *argv[])
 {
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     int file_descriptor[2];
     pipe(file_descriptor);
 
-    if (pid==fork())
+    if (pid == fork()) //potomne
     {
         char buf[BUFFER_SIZE];
         while (read(file_descriptor[0], buf, BUFFER_SIZE))
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
     }
     else
     {
-        FILE *f = fopen(argv[1], "r");
+        FILE *f = fopen(argv[1], "r"); //macierzyste
         char buf[BUFFER_SIZE];
 
         while (fgets(buf, BUFFER_SIZE - 1, f))
@@ -47,3 +47,26 @@ int main(int argc, char *argv[])
     }
 
 }
+
+
+
+/* przykładowy output programu
+lukkai@lukkai-VirtualBox:~/Dokumenty/SCR-L/Lab5$ ./a.out tekst.txt
+#Skulony w jakiejś ciemnej jamie smaczniem sobie spał 
+#
+#I spały małe wilczki dwa - zupełnie ślepe jeszcze 
+#
+#Wtem stary wilk przewodnik co życie dobrze znał
+#
+#Łeb podniósł warknął groźnie aż mną szarpnęły dreszc#
+#ze
+#
+#Poczułem nagle wokół siebie nienawistną woń 
+#
+#Woń która tłumi wszelki spokój zrywa wszystkie sny
+#
+#Z daleka ktoś gdzieś krzyknął nagle krótki rozkaz: goń -#
+# 
+#
+#I z czterech stron wypadły na nas cztery gończe psy!
+*/
