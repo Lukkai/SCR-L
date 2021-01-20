@@ -7,6 +7,7 @@
    -wczyta podany plik do zmapowanego obszaru pamięci.
 """
 
+
 import mmap
 import os
 
